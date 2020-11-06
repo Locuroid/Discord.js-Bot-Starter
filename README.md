@@ -4,11 +4,14 @@
 
 ## Instructions
 1. Go to the Discord Developer Website and Create an Application.
-2. Create a bot under your application and copy the key it gives you. 
+2. Create a ```.env``` file in the main directory and make a value for your Bot Token with your Discord bot token. It should look like this:
+```js
+DISCORD_TOKEN=
+```
 
 ##### **WARNING: DO NOT LOSE OR GIVE OUT THIS KEY! IF THIS DOES HAPPEN, REGENERATE A NEW KEY IN YOUR DISCORD DEVELOPER CONSOLE!**
 
-3. In the ```.env``` file replace ```DISCORD_KEY_GOES_HERE``` with your Discord bot token.
+3. Create a bot under your application and copy the key it gives you. Paste it into the ```.env``` file you made.
 4. Make the bot join your server by creating a bot link [here](https://discordapi.com/permissions.html).
 5. Test out the bot with ```dbs!hello```
 6. Change your desired prefix at line 5 (```const prefix = 'dbs!'```) in bot.js to whatever you want. "!" is very overused however so I would discourage from using that prefix.
